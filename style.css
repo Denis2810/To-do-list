@@ -1,0 +1,132 @@
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    min-height: 100vh;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+ 
+    50% {
+        background-position: 100% 50%;
+    }
+ 
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Scris de mine */
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+h1{
+    color:white;
+    margin: 20px 10px 10px 10px;
+}
+
+header,
+form{
+    min-height: 10vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form input, form button{
+    padding:10px;
+    font-size:20px;
+    border:none;
+    background: white;
+    margin-bottom:20px;
+}
+
+form button{
+    cursor:pointer;
+    transition: all 0.3s ease;
+    background-color: rgb(12, 158, 12);
+    color:white;
+}
+
+form button:hover{
+    background-color: lightgray;
+    color:rgb(12, 158, 12);
+}
+
+.container{
+    display: flex;
+    align-items:center;
+    justify-content: center;
+}
+
+.list{
+    min-width:30%;
+    list-style: none;
+}
+
+.task{
+    display:flex;
+    margin:10px;
+    background: white;
+    color:black;
+    font-size:18px;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.task li{
+    flex: 1;
+}
+
+.task button{
+    border: none;
+    padding: 0.7rem;
+}
+
+.delete:hover{
+    color:#ff002b;
+    background-color:lightgray;
+    cursor:pointer;
+}
+
+.check:hover{
+    cursor:pointer;
+    background-color: lightgray;
+    color:rgb(12, 158, 12);
+}
+
+.check{
+    background-color: rgb(12, 158, 12);
+    color:white;
+}
+
+.delete{
+    background-color: #ff002b;
+    color:white;
+}
+
+.taskItem{
+    padding:4px 8px;
+}
+
+.fa-circle-check, .fa-circle-minus{
+    pointer-events:none;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity:0.5;
+}
+
+.fall{
+    transform:translateY(50px) rotateZ(20deg);
+    opacity:0;
+}
+
